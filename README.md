@@ -38,20 +38,20 @@ The theme creates missing Buy, Sell, Listings, About, Contact, Search, and Guide
 Widgets use Sheila's public embed identifier and branded search links. No credentials are included. Registration is configured in RealScout to allow 10 unique listing views before signup; this account setting is not controlled by this repository.
 
 ## Launch status
-This is the reviewed local design, not a deployed production WordPress installation. WordPress runtime testing, hosting setup, privacy/disclosure review, redirects, and domain connection remain. Preserve existing contacts and domain email records before ending existing services.
+The static website is deployed to AWS Amplify. Privacy/disclosure review, redirects, and custom domain connection remain. WordPress is optional and is not used by AWS hosting. Preserve existing contacts and domain email records before ending existing services.
 
 GitHub stores the source. GitHub Pages can serve the static HTML version but cannot run the WordPress PHP theme.
 
 ## Assets
 Photos, logo, and guides were supplied by the site owner. See website/CONTENT-SOURCES.txt for content provenance. No license to reuse these assets is granted by this repository.
 
-## AWS Amplify automatic publishing (prepared, not connected yet)
+## AWS Amplify automatic publishing
 The root amplify.yml builds a static deployment with:
 - Build command: node website/build-static.cjs
 - Output directory: dist
 - Source branch: main
 
-In AWS Amplify, create a Hosting app, connect GitHub, grant access only to this repository, and select main. Use the repository build configuration and the Standard build instance. No backend, database, environment secrets, or WordPress server is required. Keep automatic branch deployment enabled. Each push to main will publish after the build succeeds.
+The NashvilleSheila Amplify app in US East (Ohio) is connected to this repository and main, using the repository build configuration and Standard build instance. Preview: https://main.d3kpwfgxtfy2zq.amplifyapp.com No backend, database, environment secrets, or WordPress server is required. Keep automatic branch deployment enabled. Each push to main will publish after the build succeeds.
 
 Do not add a single-page-app catch-all rewrite: this website has separate HTML pages. Review the initial amplifyapp.com deployment, including listing cards, search, home value, guides, and mobile navigation before attaching NashvilleSheila.com. The design-preview notice is intentionally retained until launch checks are complete.
 
