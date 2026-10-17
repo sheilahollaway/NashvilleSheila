@@ -53,7 +53,7 @@ The root amplify.yml builds a static deployment with:
 
 The NashvilleSheila Amplify app in US East (Ohio) is connected to this repository and main, using the repository build configuration and Standard build instance. Preview: https://main.d3kpwfgxtfy2zq.amplifyapp.com No backend, database, environment secrets, or WordPress server is required. Keep automatic branch deployment enabled. Each push to main will publish after the build succeeds.
 
-Do not add a single-page-app catch-all rewrite: this website has separate HTML pages. Review the initial amplifyapp.com deployment, including listing cards, search, home value, guides, and mobile navigation before attaching NashvilleSheila.com. The design-preview notice is intentionally retained until launch checks are complete.
+Do not add a single-page-app catch-all rewrite: this website has separate HTML pages. Review the initial amplifyapp.com deployment, including listing cards, search, home value, guides, and mobile navigation before attaching NashvilleSheila.com.
 
 Add the custom domain using Amplify's domain wizard; keep domain registration at GoDaddy and enter the verification/routing DNS records AWS provides. Preserve mail records. Do not cancel the existing host until the custom domain and HTTPS are verified.
 
