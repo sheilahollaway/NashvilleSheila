@@ -88,3 +88,16 @@ h2{font-size:clamp(38px,4.4vw,61px);line-height:1.08}
 main>.embedded-search{margin-bottom:70px}
 @media(max-width:900px){.home-paths{grid-template-columns:1fr}.home-paths .place .number{margin-bottom:20px}.nav{gap:15px}}
 @media(max-width:700px){.nav{gap:12px}.page-heading{font-size:42px}.home-paths h2{font-size:36px}}
+
+/* Brokerage identification and office contact on every page. */
+.topline.brokerage-banner{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 32px;padding:18px 24px;text-transform:none;letter-spacing:0;line-height:1.25}
+.brokerage-banner strong{font-size:36px;font-weight:700}
+.brokerage-banner a{font-size:18px;font-weight:600;text-underline-offset:4px}
+.brokerage-banner a:focus-visible{outline-color:var(--peach)}
+.footer-brokerage{margin-top:14px;font-size:14px;line-height:1.6}
+.footer-brokerage strong{font-size:18px}
+.contact-brokerage{border-top:1px solid #cfc0b3;margin-top:24px;padding-top:20px}
+.contact-brokerage>strong{display:block;font-family:'Libre Caslon Display',Georgia,serif;font-size:34px;font-weight:400;line-height:1.2;margin-bottom:12px}
+.contact-brokerage>a{display:block;font-size:16px;text-underline-offset:4px}
+.contact-brokerage p{margin-top:16px}
+@media(max-width:700px){.topline.brokerage-banner{gap:9px;padding:16px}.brokerage-banner strong{font-size:34px}.brokerage-banner a{font-size:16px}}
